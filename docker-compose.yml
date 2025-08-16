@@ -29,7 +29,7 @@ services:
     build:
       context: ./backend
     env_file:
-      - ./backend/.env
+      - ./.env
     depends_on:
       postgres:
         condition: service_healthy
